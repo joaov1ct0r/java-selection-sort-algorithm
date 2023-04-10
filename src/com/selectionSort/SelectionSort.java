@@ -6,7 +6,6 @@ public class SelectionSort {
         int lowestValue, lowestValueIndex;
 
         for(int i = 0; i < arr.length - 1; i++) {
-            //Find the lowest
             lowestValue = arr[i];
             lowestValueIndex = i;
 
@@ -16,7 +15,6 @@ public class SelectionSort {
                     lowestValueIndex = j;
                 }
             }
-            //Swap
             if(i != lowestValueIndex) {
                 int temp = arr[i];
                 arr[i] = arr[lowestValueIndex];
